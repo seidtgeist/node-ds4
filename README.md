@@ -83,7 +83,7 @@ Example output frame:
 
 As long as this is pre 1.0 I'll rename property names.
 
-¯\\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
 
 ## Thanks
 
