@@ -1,0 +1,12 @@
+{
+  "globalstrict": true,
+  "browser": true,
+  "node": true,
+  "predef": ["describe", "it"],
+  "proto": true,
+  "quotmark": "single",
+  "strict": true,
+  "trailing": true,
+  "unused": true,
+  "latedef": "nofunc"
+}

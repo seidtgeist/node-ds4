@@ -1,0 +1,42 @@
+{
+  "name": "ds4",
+  "version": "0.0.0",
+  "description": "Stream events from DualShock 4 controllers",
+  "main": "index.js",
+  "bin": {
+    "ds4-dump": "bin/ds4-dump.js"
+  },
+  "dependencies": {
+    "lodash": "~2.4.0",
+    "node-hid": "~0.3.1",
+    "optimist": "~0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ehd/node-ds4.git"
+  },
+  "keywords": [
+    "dualshock",
+    "dualshock4",
+    "ds",
+    "ds4",
+    "game",
+    "controller",
+    "gamepad",
+    "joystick",
+    "stream",
+    "usb",
+    "bluetooth",
+    "hid"
+  ],
+  "author": "Stephan Seidt <stephan.seidt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehd/node-ds4/issues"
+  },
+  "homepage": "https://github.com/ehd/node-ds4"
+}
