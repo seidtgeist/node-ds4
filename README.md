@@ -7,10 +7,10 @@ Note: Also works with bluetooth, but most event data is only available via USB.
 Supports:
 
 - Left & right analog stick
-- D-pad
-- Buttons: x, circle, square, triangle, share, options
-- __(New)__ Left & right analog triggers
-- __(New)__ 2 touches on the trackpad & trackpad button
+- D-pad: up, down, left, right (also intermediate positions)
+- Buttons: x, circle, square, triangle, share, options, (__DS4__) trackpad button
+- __(DS4)__ Left & right analog triggers
+- __(DS4)__ 2 touches on the trackpad (X, Y, active, ID) & trackpad button
 - Gryoscope (absolute orientation) & accelerometer (relative movement)
 - Battery status
 
@@ -78,6 +78,12 @@ Example output frame:
   timestamp: 36,
   batteryLevel: 0 }
 ```
+
+## Caveat
+
+As long as this is pre 1.0 I'll rename property names.
+
+¯\_(ツ)_/¯
 
 ## Thanks
 
