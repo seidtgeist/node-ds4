@@ -9,10 +9,14 @@ Supports:
 - Left & right analog stick
 - D-pad: up, down, left, right (also intermediate positions)
 - Buttons: x, circle, square, triangle, share, options, (__DS4__) trackpad button
-- __(DS4)__ Left & right analog triggers
+- Left & right analog triggers
 - __(DS4)__ 2 touches on the trackpad (X, Y, active, ID) & trackpad button
 - Gryoscope (absolute orientation) & accelerometer (relative movement)
 - Battery status
+
+Compared to the DS3 the DS4 dropped most pressure sensitive buttons.
+Only L2 and R2 are still also analog.
+I guess someone had to make room for the trackpad...
 
 TODO:
 
