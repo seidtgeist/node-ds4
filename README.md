@@ -40,6 +40,14 @@ $ ds4-dump
 
 Will dump decoded events to stdout.
 
+``` js
+var ds4 = require('ds4');
+var through = require('through');
+
+// controller is a node-hid HID object representing the controller
+hid.pipe(through(ds4.parseDS4HIDData)).pipe(process.stdout);
+```
+
 Example output frame:
 
 ``` js
