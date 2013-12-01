@@ -62,6 +62,6 @@ function parseDS4HIDData(buf) {
     //battery: buf[12],
     //batteryShort1: buf[12] & 0x0f,
     //batteryShort2: buf[12] & 0xf0,
-    batteryLevel: buf[12] & 0xf0
+    batteryLevel: buf[12]
   };
 }
