@@ -4,6 +4,8 @@ Stream events from DualShock 4 controllers.
 
 Note: Also works with bluetooth, but most event data is only available via USB.
 
+__Understand HID(API)/node-hid?__ Please tell me how I can get all 64 bytes from Bluetooth instead of just 8!
+
 Supports:
 
 - Left & right analog stick
