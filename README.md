@@ -99,8 +99,9 @@ As long as this is pre 1.0 I'll rename property names.
 
 ¯\\\_(ツ)\_/¯
 
-## Thanks
+## Thanks & References
 
+- http://www.psdevwiki.com/ps4/Talk:DualShock_4 http://www.psdevwiki.com/ps4/DualShock_4
 - @johndrinkwater [protocol gist](https://gist.github.com/johndrinkwater/7708901)
 - @rdepena [node-dualshock-controller](https://github.com/rdepena/node-dualshock-controller)
 
