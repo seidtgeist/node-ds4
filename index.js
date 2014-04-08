@@ -34,10 +34,6 @@ function parseDS4HIDData(buf) {
     trackPadButton: (buf[7] & 2) !== 0,
     psButton: (buf[7] & 1) !== 0,
 
-    //
-    // USB only, doesn't work via bluetooth?
-    //
-
     // ACCEL/GYRO
     motionY: buf.readInt16LE(13),
     motionX: -buf.readInt16LE(15),
