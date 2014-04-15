@@ -22,7 +22,7 @@ var offset = 0;
 
 if (isBluetoothHID(controller)) {
     offset = 2;
-    hidDevice.getFeatureReport(0x04, 128);
+    hidDevice.getFeatureReport(0x04, 66);
 }
 
 hidDevice.on('data', function(buf) {
