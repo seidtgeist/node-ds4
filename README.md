@@ -1,10 +1,6 @@
 # node-ds4
 
-Stream events from DualShock 4 controllers.
-
-Note: Also works with bluetooth, but most event data is only available via USB.
-
-__Understand HID(API)/node-hid?__ Please tell me how I can get all 64 bytes from Bluetooth instead of just 8!
+Stream events from DualShock 4 controllers. Works for Bluetooth & USB.
 
 Supports:
 
@@ -17,7 +13,7 @@ Supports:
 - Battery status
 
 Compared to the DS3 the DS4 dropped most pressure sensitive buttons.
-Only L2 and R2 are still also analog.
+Only L2 and R2 are still also analog. PEW PEW!
 I guess someone had to make room for the trackpad...
 
 TODO:
