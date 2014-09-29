@@ -17,8 +17,8 @@ function parseDS4HIDData(buf) {
     dPadDown: buf[5] === 3 || buf[5] === 4 || buf [5] === 5,
     dPadLeft: buf[5] === 5 || buf[5] === 6 || buf [5] === 7,
 
-    x: (buf[5] & 32) !== 0,
-    cricle: (buf[5] & 64) !== 0,
+    cross: (buf[5] & 32) !== 0,
+    circle: (buf[5] & 64) !== 0,
     square: (buf[5] & 16) !== 0,
     triangle: (buf[5] & 128) !== 0,
 
