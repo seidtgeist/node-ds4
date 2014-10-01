@@ -4,6 +4,7 @@ exports.parseDS4HIDData = parseDS4HIDData;
 
 // Buffer -> DS4State
 function parseDS4HIDData(buf) {
+  var dPad = buf[5] & 15;
   return {
     leftAnalogX: buf[1],
     leftAnalogY: buf[2],
@@ -12,10 +13,10 @@ function parseDS4HIDData(buf) {
     l2Analog: buf[8],
     r2Analog: buf[9],
 
-    dPadUp: buf[5] === 0 || buf[5] === 1 || buf [5] === 7,
-    dPadRight: buf[5] === 1 || buf[5] === 2 || buf [5] === 3,
-    dPadDown: buf[5] === 3 || buf[5] === 4 || buf [5] === 5,
-    dPadLeft: buf[5] === 5 || buf[5] === 6 || buf [5] === 7,
+    dPadUp:    dPad === 0 || dPad === 1 || dPad === 7,
+    dPadRight: dPad === 1 || dPad === 2 || dPad === 3,
+    dPadDown:  dPad === 3 || dPad === 4 || dPad === 5,
+    dPadLeft:  dPad === 5 || dPad === 6 || dPad === 7,
 
     cross: (buf[5] & 32) !== 0,
     circle: (buf[5] & 64) !== 0,
