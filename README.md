@@ -89,6 +89,22 @@ Example output frame:
   batteryLevel: 0 }
 ```
 
+Emitting data:
+
+``` js
+var ds4 = require('ds4');
+
+ds4.emit(hid, {
+  rumbleRight: 0, // 0 ... 255
+  rumbleLeft:  0, // 0 ... 255
+  r:           0, // 0 ... 255
+  g:           0, // 0 ... 255
+  b:           0, // 0 ... 255
+  flashOn:     0, // 0 ... 255  (flash on duration)
+  flashOff:    0  // 0 ... 255  (flash off duration)
+});
+```
+
 ## Caveat
 
 As long as this is pre 1.0 I'll rename property names.

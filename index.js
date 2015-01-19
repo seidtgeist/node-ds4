@@ -1,6 +1,7 @@
 'use strict';
 
 exports.parseDS4HIDData = parseDS4HIDData;
+exports.emit = emit;
 
 // Buffer -> DS4State
 function parseDS4HIDData(buf) {
@@ -61,4 +62,20 @@ function parseDS4HIDData(buf) {
     //batteryShort2: buf[12] & 0xf0,
     batteryLevel: buf[12]
   };
+}
+
+function emit(hidDevice, data) {
+  hidDevice.write([
+    0x05,
+    0xff,
+    0x04,
+    0x00,
+    data.rumbleRight || 0,
+    data.rumbleLeft  || 0,
+    data.r           || 0,
+    data.g           || 0,
+    data.b           || 0,
+    data.flashOn     || 0,
+    data.flashOff    || 0
+  ]);
 }
