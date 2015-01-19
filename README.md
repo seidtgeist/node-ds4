@@ -10,6 +10,8 @@ Supports:
 - Left & right analog triggers
 - __(DS4)__ 2 touches on the trackpad (X, Y, active, ID) & trackpad button
 - Gryoscope (absolute orientation) & accelerometer (relative movement)
+- Activating motors
+- Changing LED color
 - Battery status
 
 Compared to the DS3 the DS4 dropped most pressure sensitive buttons.
@@ -18,8 +20,6 @@ I guess someone had to make room for the trackpad...
 
 TODO:
 
-- Activating motors
-- Changing LED color
 - Microphone/speaker magic
 
 ## Install
@@ -87,6 +87,22 @@ Example output frame:
   trackPadTouch1Y: 0,
   timestamp: 36,
   batteryLevel: 0 }
+```
+
+Emitting data:
+
+``` js
+var ds4 = require('ds4');
+
+ds4.emit(hid, {
+  rumbleRight: 0, // 0 ... 255
+  rumbleLeft:  0, // 0 ... 255
+  r:           0, // 0 ... 255
+  g:           0, // 0 ... 255
+  b:           0, // 0 ... 255
+  flashOn:     0, // 0 ... 255  (flash on duration)
+  flashOff:    0  // 0 ... 255  (flash off duration)
+});
 ```
 
 ## Caveat
