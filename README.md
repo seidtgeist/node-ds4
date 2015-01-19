@@ -10,6 +10,8 @@ Supports:
 - Left & right analog triggers
 - __(DS4)__ 2 touches on the trackpad (X, Y, active, ID) & trackpad button
 - Gryoscope (absolute orientation) & accelerometer (relative movement)
+- Activating motors
+- Changing LED color
 - Battery status
 
 Compared to the DS3 the DS4 dropped most pressure sensitive buttons.
@@ -18,8 +20,6 @@ I guess someone had to make room for the trackpad...
 
 TODO:
 
-- Activating motors
-- Changing LED color
 - Microphone/speaker magic
 
 ## Install
