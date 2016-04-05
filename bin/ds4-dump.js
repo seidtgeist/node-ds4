@@ -2,16 +2,13 @@
 
 'use strict';
 
-var _ = require('lodash');
 var hid = require('node-hid');
 var ds4 = require('..');
 
 var parseDS4HIDData = ds4.parseDS4HIDData;
 
 var devices = hid.devices();
-var controller = _(devices)
-    .filter(isDS4HID)
-    .first();
+var controller = devices.filter(isDS4HID)[0]
 
 if (!controller) {
     throw new Error('Could not find desired controller.');
