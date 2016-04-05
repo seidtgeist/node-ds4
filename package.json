@@ -7,9 +7,7 @@
     "ds4-dump": "bin/ds4-dump.js"
   },
   "dependencies": {
-    "lodash": "~2.4.0",
-    "node-hid": "~0.3.1",
-    "optimist": "~0.6.0"
+    "node-hid": "^0.5.1"
   },
   "devDependencies": {},
   "scripts": {
